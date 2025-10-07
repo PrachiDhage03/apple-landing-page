@@ -1,0 +1,472 @@
+@font-face {
+  font-family: "regular";
+  src: url("sf-pro-text_regular.woff2");
+}
+
+@font-face {
+  font-family: "semibold";
+  src: url(sf-pro-text_semibold.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+.nav {
+  height: 48px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 200px;
+  background-color: #454545;
+  font-family: "regular";
+  position: fixed;
+  top: 0; /* make sure it’s pinned to top */
+  left: 0;
+  z-index: 1000;
+}
+.nav img {
+  height: 20px;
+  width: 20px;
+}
+a {
+  text-decoration: none;
+  color: #c7c7c7;
+}
+i {
+  color: #c7c7c7;
+}
+.serch-icon,
+.cart-icon {
+  margin-left: 12px;
+}
+.nav-logo {
+  color: #c7c7c7;
+  font-size: 20px;
+}
+
+/* nav-bar end  */
+
+.section-1 {
+  height: 100%;
+  width: 100%;
+
+  position: relative;
+}
+.text {
+  position: absolute;
+  font-family: "regular";
+  left: 10%;
+  transform: translate(100%, 70%);
+  color: white;
+  line-height: 50px;
+}
+
+.text p {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.text h1 {
+  font-size: 3.5rem;
+}
+
+.section-1 img {
+  height: 100vh;
+  width: 100vw;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+.buttons button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  position: relative;
+  left: 70px;
+  font-size: 1rem;
+}
+
+.buttons .b1 {
+  background-color: #0077ed;
+  color: white;
+  border: none;
+}
+.buttons .b2 {
+  background-color: transparent;
+  border-color: #0077ed;
+  color: #0077ed;
+}
+
+/* section-1 end */
+
+.section-2 {
+  display: grid;
+  grid-template-rows: repeat(5, 800px); /* 4 rows, each 200px */
+  grid-template-columns: 1fr 1fr; /* 2 equal columns */
+  gap: 10px; /* space between items */
+}
+
+.div {
+  background-color: lightblue;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-2 .text {
+  position: relative;
+  font-family: "regular";
+  color: black;
+  transform: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  white-space: pre;
+  top: 10%;
+  left: 2%;
+}
+
+.section-2 button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  position: relative;
+  left: 30px;
+  font-size: 1rem;
+}
+
+.section-2 .b1 {
+  background-color: #0077ed;
+  color: white;
+  border: none;
+}
+.section-2 .b2 {
+  background-color: transparent;
+  border-color: #0077ed;
+  color: #0077ed;
+}
+
+.section-2 h1 {
+  font-size: 4rem;
+}
+
+.section-2 p {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.8rem;
+}
+
+.row-1 {
+  grid-column: span 2;
+}
+
+.row-2 {
+  grid-column: span 2;
+}
+
+.div-1 {
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-image: url(https://www.apple.com/v/home/ch/images/heroes/iphone-air/hero_iphone_air__0gxyavihpiqu_mediumtall_2x.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.div-1 p {
+  line-height: 2rem;
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+
+.div-2 {
+  height: 100%;
+  width: 100%;
+
+  color: white;
+  background-image: url(https://www.apple.com/v/home/ch/images/heroes/iphone-17/hero_iphone_17__c5vvimu9a20y_mediumtall_2x.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.div-2 p {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.div-2 .buttons {
+  position: relative;
+  top: 10px;
+  left: -30px;
+}
+.div-3 {
+  height: 100%;
+  width: 100%;
+
+  color: white;
+  background-image: url(https://www.apple.com/v/home/ch/images/promos/apple-watch-series-11/promo_apple_watch_series_11__b63hxviqvonm_medium_2x.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.div-3 img {
+  height: 35px;
+}
+
+.div-3 p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.div-4 {
+  height: 100%;
+  width: 100%;
+
+  background-image: url(https://www.apple.com/v/home/ch/images/promos/airpods-pro-3/promo_airpodspro_3__f6xmza7bglei_medium_2x.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.div-4 h1 {
+  font-size: 2.1rem;
+}
+.div-4 img {
+  height: 35px;
+}
+
+.div-4 p {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.div-5 {
+  background-color: rgb(0, 255, 217);
+  background-image: url(https://www.apple.com/v/home/ch/images/promos/education/promo_edu__efkxh2h1luoi_medium_2x.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.div-5 .text {
+  position: relative;
+  top: 70%;
+}
+.div-5 h1 {
+  font-size: 2.1rem;
+  color: white;
+}
+.div-5 img {
+  height: 35px;
+  color: white;
+}
+.div-5 p {
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+.div-5 button {
+  position: relative;
+  left: -0px;
+  color: white;
+}
+
+.div-6 {
+  height: 100%;
+  width: 100%;
+
+  background-image: url(https://www.apple.com/v/home/ch/images/promos/macbook-air/promo_macbook_air__fqowrtnxewqe_medium_2x.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.div-6 h1 {
+  font-size: 2.1rem;
+}
+
+.div-6 p {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.div-7 {
+  height: 100%;
+  width: 100%;
+
+  background-image: url(https://www.apple.com/v/home/ch/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_medium_2x.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.div-7 h1 {
+  font-size: 2.1rem;
+}
+.div-4 img {
+  height: 35px;
+}
+
+.div-7 p {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.div-7 .buttons {
+  position: relative;
+  left: -3%;
+}
+.div-8 {
+  height: 100%;
+  width: 100%;
+
+  background-image: url(https://www.apple.com/v/home/ch/images/promos/apple-card/promo_apple_card__5cm7draujpey_medium_2x.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.div-8 h1 {
+  font-size: 2.1rem;
+}
+.div-8 img {
+  height: 35px;
+}
+
+.div-8 p {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.section-3 {
+  min-height: 100vh;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+
+.section-3 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  animation: scroll 10s linear infinite;
+}
+
+.section-3 img {
+  height: 500px;
+  width: 100%;
+}
+
+.section-4 {
+  width: 100vw;
+  margin-top: -80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-4 .scroll {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  animation: move 10s linear infinite;
+}
+.scroll img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50%));
+  }
+}
+
+.footer {
+  width: 100%;
+  background-color: #f3f3f3;
+
+  font-family: "regular";
+  padding: 10px 100px;
+  margin-top: 10px;
+}
+
+.footer p {
+  white-space: pre;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.56);
+  padding-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 120px;
+  text-align: start;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 180px;
+  margin: 0 20px;
+}
+
+.footer-column h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 6px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 13px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.last {
+  display: flex;
+  margin: 10px 0px;
+  align-items: center;
+  justify-content: space-between;
+}
